@@ -13,6 +13,7 @@
 
 SYNTHESIZE_SINGLETON_FOR_HEADER(ColorManager)
 
+//获取随机颜色数组
 - (NSArray*)getRandomCGColorArray;
 
 @end

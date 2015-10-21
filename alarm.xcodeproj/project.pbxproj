@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1DD3129E1BD7C34100E60A88 /* HSBColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3129D1BD7C34100E60A88 /* HSBColorModel.m */; settings = {ASSET_TAGS = (); }; };
+		1DD312A41BD7D0E900E60A88 /* RecordingCircleOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD312A31BD7D0E900E60A88 /* RecordingCircleOverlayView.m */; settings = {ASSET_TAGS = (); }; };
+		1DD312AD1BD7D10F00E60A88 /* BlurredColorBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD312AC1BD7D10F00E60A88 /* BlurredColorBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		1DD312B01BD7D19D00E60A88 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD312AF1BD7D19D00E60A88 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1DE178B91BD7695E002E63BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178B81BD7695E002E63BB /* main.m */; };
 		1DE178BC1BD7695E002E63BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178BB1BD7695E002E63BB /* AppDelegate.m */; };
-		1DE178C21BD7695E002E63BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE178C01BD7695E002E63BB /* Main.storyboard */; };
 		1DE178C41BD7695F002E63BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE178C31BD7695F002E63BB /* Images.xcassets */; };
 		1DE178C71BD7695F002E63BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE178C51BD7695F002E63BB /* LaunchScreen.xib */; };
 		1DE178D31BD7695F002E63BB /* alarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178D21BD7695F002E63BB /* alarmTests.m */; };
 		1DE178E91BD769A5002E63BB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178DE1BD769A5002E63BB /* BaseViewController.m */; };
 		1DE178EA1BD769A5002E63BB /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178E11BD769A5002E63BB /* ColorManager.m */; };
-		1DE178EB1BD769A5002E63BB /* BlurredColorBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178E81BD769A5002E63BB /* BlurredColorBackgroundView.m */; };
 		1DE178F61BD770CD002E63BB /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178F51BD770CD002E63BB /* TimerManager.m */; };
 /* End PBXBuildFile section */
 
@@ -33,12 +34,17 @@
 /* Begin PBXFileReference section */
 		1DD3129C1BD7C34100E60A88 /* HSBColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBColorModel.h; sourceTree = "<group>"; };
 		1DD3129D1BD7C34100E60A88 /* HSBColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBColorModel.m; sourceTree = "<group>"; };
+		1DD312A21BD7D0E900E60A88 /* RecordingCircleOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingCircleOverlayView.h; sourceTree = "<group>"; };
+		1DD312A31BD7D0E900E60A88 /* RecordingCircleOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingCircleOverlayView.m; sourceTree = "<group>"; };
+		1DD312AB1BD7D10F00E60A88 /* BlurredColorBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurredColorBackgroundView.h; sourceTree = "<group>"; };
+		1DD312AC1BD7D10F00E60A88 /* BlurredColorBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurredColorBackgroundView.m; sourceTree = "<group>"; };
+		1DD312AE1BD7D19D00E60A88 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1DD312AF1BD7D19D00E60A88 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1DE178B31BD7695E002E63BB /* alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE178B71BD7695E002E63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE178B81BD7695E002E63BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1DE178BA1BD7695E002E63BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DE178BB1BD7695E002E63BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1DE178C11BD7695E002E63BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DE178C31BD7695F002E63BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DE178C61BD7695F002E63BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1DE178CC1BD7695F002E63BB /* alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +54,6 @@
 		1DE178DE1BD769A5002E63BB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1DE178E01BD769A5002E63BB /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
 		1DE178E11BD769A5002E63BB /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
-		1DE178E71BD769A5002E63BB /* BlurredColorBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurredColorBackgroundView.h; sourceTree = "<group>"; };
-		1DE178E81BD769A5002E63BB /* BlurredColorBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurredColorBackgroundView.m; sourceTree = "<group>"; };
 		1DE178EF1BD76A19002E63BB /* SingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTemplate.h; sourceTree = "<group>"; };
 		1DE178F01BD76A3B002E63BB /* alarm-prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "alarm-prefix.h"; sourceTree = "<group>"; };
 		1DE178F41BD770CD002E63BB /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
@@ -123,7 +127,6 @@
 				1DE178EE1BD76A19002E63BB /* Util */,
 				1DE178BA1BD7695E002E63BB /* AppDelegate.h */,
 				1DE178BB1BD7695E002E63BB /* AppDelegate.m */,
-				1DE178C01BD7695E002E63BB /* Main.storyboard */,
 				1DE178C31BD7695F002E63BB /* Images.xcassets */,
 				1DE178C51BD7695F002E63BB /* LaunchScreen.xib */,
 				1DE178B61BD7695E002E63BB /* Supporting Files */,
@@ -162,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				1DD3129A1BD7B87700E60A88 /* BaseViewController */,
+				1DD312AE1BD7D19D00E60A88 /* HomeViewController.h */,
+				1DD312AF1BD7D19D00E60A88 /* HomeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,18 +199,12 @@
 		1DE178E51BD769A5002E63BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1DE178E61BD769A5002E63BB /* Commom */,
+				1DD312AB1BD7D10F00E60A88 /* BlurredColorBackgroundView.h */,
+				1DD312AC1BD7D10F00E60A88 /* BlurredColorBackgroundView.m */,
+				1DD312A21BD7D0E900E60A88 /* RecordingCircleOverlayView.h */,
+				1DD312A31BD7D0E900E60A88 /* RecordingCircleOverlayView.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1DE178E61BD769A5002E63BB /* Commom */ = {
-			isa = PBXGroup;
-			children = (
-				1DE178E71BD769A5002E63BB /* BlurredColorBackgroundView.h */,
-				1DE178E81BD769A5002E63BB /* BlurredColorBackgroundView.m */,
-			);
-			path = Commom;
 			sourceTree = "<group>";
 		};
 		1DE178EE1BD76A19002E63BB /* Util */ = {
@@ -296,7 +295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE178C21BD7695E002E63BB /* Main.storyboard in Resources */,
 				1DE178C71BD7695F002E63BB /* LaunchScreen.xib in Resources */,
 				1DE178C41BD7695F002E63BB /* Images.xcassets in Resources */,
 			);
@@ -317,9 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE178BC1BD7695E002E63BB /* AppDelegate.m in Sources */,
+				1DD312AD1BD7D10F00E60A88 /* BlurredColorBackgroundView.m in Sources */,
 				1DE178E91BD769A5002E63BB /* BaseViewController.m in Sources */,
+				1DD312A41BD7D0E900E60A88 /* RecordingCircleOverlayView.m in Sources */,
 				1DD3129E1BD7C34100E60A88 /* HSBColorModel.m in Sources */,
-				1DE178EB1BD769A5002E63BB /* BlurredColorBackgroundView.m in Sources */,
+				1DD312B01BD7D19D00E60A88 /* HomeViewController.m in Sources */,
 				1DE178B91BD7695E002E63BB /* main.m in Sources */,
 				1DE178EA1BD769A5002E63BB /* ColorManager.m in Sources */,
 				1DE178F61BD770CD002E63BB /* TimerManager.m in Sources */,
@@ -345,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1DE178C01BD7695E002E63BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DE178C11BD7695E002E63BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1DE178C51BD7695F002E63BB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

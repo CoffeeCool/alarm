@@ -39,10 +39,4 @@
     return _backgroundView;
 }
 
-
-
-
-
-
-
 @end

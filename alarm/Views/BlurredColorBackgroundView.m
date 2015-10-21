@@ -10,7 +10,7 @@
 #import "ColorManager.h"
 #import "TimerManager.h"
 
-#define timerScheduledTimeInterval 2.0f
+#define timerScheduledTimeInterval 10.0f
 
 @interface BlurredColorBackgroundView()
 
@@ -33,6 +33,7 @@
 }
 
 #pragma mark - private methods
+
 //启动计时器
 - (void)setTimer
 {
@@ -54,7 +55,7 @@
         _gradientLayer.frame = self.bounds;
         //设置渐变颜色方向
         _gradientLayer.startPoint = CGPointMake(0, 0);
-        _gradientLayer.endPoint = CGPointMake(1, 1);
+        _gradientLayer.endPoint = CGPointMake(0, 1);
         //设定颜色组
         _gradientLayer.colors = [[ColorManager sharedColorManager] getRandomCGColorArray];
         //设定颜色分割点
