@@ -7,35 +7,45 @@
 //
 
 #import "ColorManager.h"
-
-@interface ColorManager()
-@property (nonatomic, strong) NSMutableArray* hueArray;
-@end
+#import "HSBColorModel.h"
 
 @implementation ColorManager
+
 SYNTHESIZE_SINGLETON_FOR_CLASS(ColorManager)
 
 #pragma mark - manager get methods
 
-- (NSArray*)getRandomCGColorArray
+- (NSArray *)getRandomCGColorArray
 {
-    NSMutableArray *colors = [NSMutableArray array];
-    for (NSInteger hue = [self getEndHue] + 20; hue > [self getEndHue]; hue -= 1) {
-        UIColor *color = [UIColor colorWithHue:1.0 * hue / 360.0
-                                    saturation:1.0
-                                    brightness:1.0
+    NSMutableArray *colors = [[NSMutableArray alloc] init];
+    
+    HSBColorModel *hueModel = [self getColorModel];
+    
+    for (NSInteger i = hueModel.hue + 20; i > hueModel.hue; i -= 1) {
+        UIColor *color = [UIColor colorWithHue:1.0 * i / 360.0
+                                    saturation:hueModel.saturation
+                                    brightness:hueModel.brightness
                                          alpha:1.0];
         [colors addObject:(id)[color CGColor]];
     }
+    
     return colors;
 }
 
-- (NSInteger)getEndHue
+- (HSBColorModel *)getColorModel
 {
-    return 180;
+    NSMutableArray *colorArray = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < 5; i++) {
+        HSBColorModel *colorModel = [[HSBColorModel alloc] init];
+        //临时
+        colorModel.hue = 180+i*20;
+        colorModel.saturation = 1.0;
+        colorModel.brightness = 1.0;
+        [colorArray addObject:colorModel];
+    }
+    
+    return (HSBColorModel *)colorArray[arc4random()%(colorArray.count)];
 }
-
-#pragma mark - getters and setters
 
 
 

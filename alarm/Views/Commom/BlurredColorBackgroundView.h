@@ -1,6 +1,6 @@
 //
 //  BlurredColorBackgroundView.h
-//  
+//  背景类
 //
 //  Created by Coffee on 15/10/18.
 //

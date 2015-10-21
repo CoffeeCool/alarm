@@ -8,6 +8,11 @@
 
 #ifndef alarm_alarm_prefix_h
 #define alarm_alarm_prefix_h
+
+/*
+app配置相关
+ */
+
 // 屏幕的宽、高
 #define kScreen_Height [UIScreen mainScreen].bounds.size.height
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
@@ -22,4 +27,6 @@
 
 //比较字符串是否相等（忽略大小写），相等的话返回YES，否则返回NO
 #define AnydoorCompareString(thing1, thing2) (thing1 && [thing1 isKindOfClass:[NSString class]] && thing2 && [thing2 isKindOfClass:[NSString class]] && [thing1 compare:thing2 options:NSCaseInsensitiveSearch] == NSOrderedSame)
+
+
 #endif

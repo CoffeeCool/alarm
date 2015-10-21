@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD3129E1BD7C34100E60A88 /* HSBColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3129D1BD7C34100E60A88 /* HSBColorModel.m */; settings = {ASSET_TAGS = (); }; };
 		1DE178B91BD7695E002E63BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178B81BD7695E002E63BB /* main.m */; };
 		1DE178BC1BD7695E002E63BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE178BB1BD7695E002E63BB /* AppDelegate.m */; };
 		1DE178C21BD7695E002E63BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE178C01BD7695E002E63BB /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DD3129C1BD7C34100E60A88 /* HSBColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBColorModel.h; sourceTree = "<group>"; };
+		1DD3129D1BD7C34100E60A88 /* HSBColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBColorModel.m; sourceTree = "<group>"; };
 		1DE178B31BD7695E002E63BB /* alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE178B71BD7695E002E63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE178B81BD7695E002E63BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD3129A1BD7B87700E60A88 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DE178DD1BD769A5002E63BB /* BaseViewController.h */,
+				1DE178DE1BD769A5002E63BB /* BaseViewController.m */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		1DD3129B1BD7C32E00E60A88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DD3129C1BD7C34100E60A88 /* HSBColorModel.h */,
+				1DD3129D1BD7C34100E60A88 /* HSBColorModel.m */,
+			);
+			name = Models;
+			path = Managers/Models;
+			sourceTree = "<group>";
+		};
 		1DE178AA1BD7695E002E63BB = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +116,7 @@
 			children = (
 				1DE178DC1BD769A5002E63BB /* Controllers */,
 				1DE178DF1BD769A5002E63BB /* Managers */,
-				1DE178E21BD769A5002E63BB /* Models */,
+				1DD3129B1BD7C32E00E60A88 /* Models */,
 				1DE178E31BD769A5002E63BB /* Resources */,
 				1DE178E41BD769A5002E63BB /* Vendor */,
 				1DE178E51BD769A5002E63BB /* Views */,
@@ -139,8 +161,7 @@
 		1DE178DC1BD769A5002E63BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1DE178DD1BD769A5002E63BB /* BaseViewController.h */,
-				1DE178DE1BD769A5002E63BB /* BaseViewController.m */,
+				1DD3129A1BD7B87700E60A88 /* BaseViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,13 +175,6 @@
 				1DE178E11BD769A5002E63BB /* ColorManager.m */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		1DE178E21BD769A5002E63BB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		1DE178E31BD769A5002E63BB /* Resources */ = {
@@ -304,6 +318,7 @@
 			files = (
 				1DE178BC1BD7695E002E63BB /* AppDelegate.m in Sources */,
 				1DE178E91BD769A5002E63BB /* BaseViewController.m in Sources */,
+				1DD3129E1BD7C34100E60A88 /* HSBColorModel.m in Sources */,
 				1DE178EB1BD769A5002E63BB /* BlurredColorBackgroundView.m in Sources */,
 				1DE178B91BD7695E002E63BB /* main.m in Sources */,
 				1DE178EA1BD769A5002E63BB /* ColorManager.m in Sources */,
@@ -504,6 +519,7 @@
 				1DE178D81BD7695F002E63BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DE178D91BD7695F002E63BB /* Build configuration list for PBXNativeTarget "alarmTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				1DE178DB1BD7695F002E63BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

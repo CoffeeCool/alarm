@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "BlurredColorBackgroundView.h"
+
 @interface BaseViewController ()
 
 @property (nonatomic, strong) BlurredColorBackgroundView* backgroundView;

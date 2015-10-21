@@ -9,7 +9,9 @@
 #import "BlurredColorBackgroundView.h"
 #import "ColorManager.h"
 #import "TimerManager.h"
-#define timerScheduledTimeInterval 1.0f
+
+#define timerScheduledTimeInterval 2.0f
+
 @interface BlurredColorBackgroundView()
 
 @property (strong, nonatomic) CAGradientLayer *gradientLayer;
@@ -31,13 +33,13 @@
 }
 
 #pragma mark - private methods
-
+//启动计时器
 - (void)setTimer
 {
     [[TimerManager sharedTimerManager] scheduledTimerWithTimeInterval:timerScheduledTimeInterval
                                                   completionWithBlock:^{
-        //block
-        _gradientLayer.colors = [[ColorManager sharedColorManager] getRandomCGColorArray];
+
+      _gradientLayer.colors = [[ColorManager sharedColorManager] getRandomCGColorArray];
 
     }];
 }

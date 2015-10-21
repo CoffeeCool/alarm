@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SingletonTemplate.h"
+
 typedef void (^ActionBlock)();
 
 @interface TimerManager : NSObject
